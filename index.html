@@ -1,42 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travola - الصفحة الرئيسية</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta name="referrer" content="no-referrer">
-  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travola - الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Travola</h1>
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="login.html">تسجيل الدخول</a></li>
-        <li><a href="register.html">إنشاء حساب</a></li>
-        <li><a href="profile.html">البروفايل</a></li>
-        <li><a href="book.html">حجز جديد</a></li>
-        <li><a href="mybookings.html">حجوزاتي</a></li>
-        <li><a href="admin.html">لوحة التحكم</a></li>
-      </ul>
-    </nav>
+    <h1>Travola</h1>
+    <p>أفضل موقع لحجز الفنادق حول العالم</p>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>احجز فندقك أو رحلتك بسهولة وسرعة</h2>
-      <p>Travola هو موقع دولي يوفر لك تجربة حجز فريدة بلغتين: عربي وإنجليزي</p>
-      <a href="book.html" class="btn">ابدأ الحجز الآن</a>
-    </section>
-  </main>
+  <section class="hero">
+    <h1>احجز فندقك الآن</h1>
+    <p>سهولة، سرعة، أمان</p>
+    <form class="search-form">
+      <input type="text" placeholder="المدينة أو الفندق" />
+      <input type="date" />
+      <input type="date" />
+      <button>ابحث</button>
+    </form>
+  </section>
+
+  <section class="popular-destinations">
+    <h2>وجهات مشهورة</h2>
+    <div class="destinations-grid">
+      <a href="hotel.html" class="destination-card">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="دبي">
+        <h3>دبي</h3>
+      </a>
+      <a href="hotel.html" class="destination-card">
+        <img src="https://images.unsplash.com/photo-1551887374-6fc8c9b66c1e" alt="القاهرة">
+        <h3>القاهرة</h3>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Travola. جميع الحقوق محفوظة.</p>
+    <p>© Travola 2025</p>
   </footer>
 </body>
 </html>
